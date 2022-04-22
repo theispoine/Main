@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Kadir Çiçek</title>
+        <link href="styles.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">İçerik</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Hakkımda</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="proje.html">Bootstrap 5 Select Menu</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>Bootstrap Kurulumu</h1>
+                <p>
+                   Head bloğu içerisine bootstrap css dosyasına link oluşturdum ve belirli ekran boyutlarında görünümün değişmemesi için belirli eklentileri ekledim;   
+                    <xmp  style="color:green">
+                        <head>
+                            <meta charset="utf-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                            <meta name="description" content="" />
+                            <meta name="author" content="" />
+                            <title>İbrahim Eres</title>
+                            <link href="styles.css" rel="stylesheet" />
+                            
+                        </head>              
+                      </xmp>
+                </p>
+                <p>
+                   body bloğu sonunda bootstrap js dosyalarına link oluşturdum;
+                     <xmp  style="color:green">
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                        <script src="scripts.js"></script>
+                    </body>    
+                       </xmp>
+                 </p>
+          
+                <h1>Bootstrap 5 Select Menu</h1>
+                <p class="lead">Bootstrap 5 ile select menu yapısının ne olduğunu, ne işe yaradığını sizlere aktaracağım.</p>
+                <p><h5>Bootstrap Nedir?</h5>Bootstrap, kullanılabilir kod parçalarından oluşan açık kaynaklı ve ücretsiz bir web uygulaması geliştirme araç takımıdır. Sahip olduğu CSS ve JavaScript taslakları, web sitelerinin ve mobil uygulamaların kullanıcılara görünen bileşenleri için kullanılır.</p>
+                <p><h5>Select Menu nedir?</h5>İnternet sitelerinde, fazla alt sayfa veya kategori olması durumunda kullanılan tıklama ya da fare imleci ile üzerine gelince açılan menülerde seçim yapmamızı sağlar.</p>
+                
+                    <h2>Select Menu</h2>
+                    <p>Kullanıcının birden fazla seçenek arasından seçim yapmasına izin vermek istiyorsanız seçim menüleri kullanılır.
+                        Bootstrap 5'te bir seçim menüsüne stil vermek için,form-select classını select öğesine ekleyin.</p>
+                    <p>
+                        Basit bir seçilebilir menü yaptım;    
+                        <xmp  style="color:green">
+                            <form action="/action_page.php">
+                                <label for="sel1" class="form-label">Select list (select one):</label>
+                               <select class="form-select" id="sel1" name="sellist1">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                               </select>              
+                          </xmp>
+                    </p>
+                    <form action="/action_page.php">
+                        <label for="sel1" class="form-label">Select list (birini seçin):</label>
+                       <select class="form-select" id="sel1" name="sellist1">
+                         <option>Seçenek1</option>
+                         <option>Seçenek2</option>
+                         <option>Seçenek3</option>
+                         <option>Seçenek4</option>
+                       </select>
+                    
+                    <p>Örnek olarak aşağıda gördüğünüz gibi ülke seçmek için yapılan seçilebilir menü.</p>
+                    <img src="Bootstrap-Fancy-Select-Box-min.gif"></img>
+               
+                <h2>Select Menu Size</h2>
+                <p>Seçim menüsünün boyutunu değiştirmek istiyorsanız [form-select-lg] veya [form-select-sm] sınıfını kullanabilirsiniz:</p>
+                <p>
+                   Farklı boyutlarda menü oluşturdum; 
+                   <div class="text-center mt-5">   
+                    <xmp class="text-center mt-5" style="color:green">
+                        <form>
+                            <select class="form-select form-select-lg">
+                              <option>a</option>
+                              <option>b</option>
+                              <option>c</option>
+                              <option>d</option>
+                            </select>
+                            
+                            <select class="form-select mt-3">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                            
+                            <select class="form-select form-select-sm mt-3">
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                            </select>
+                           </form>  
+                    </xmp>
+                </div>
+                </p>
+                <form>
+                    <select class="form-select form-select-lg">
+                      <option>a</option>
+                      <option>b</option>
+                      <option>c</option>
+                      <option>d</option>
+                    </select>
+                    
+                    <select class="form-select mt-3">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    
+                    <select class="form-select form-select-sm mt-3">
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                    </select>
+                   </form>    
+                <h2>Disabled Select Menu</h2>
+                <p>Seçim menüsünü devre dışı bırakmak için disabled özelliğini kullanabilirsiniz:</p>
+                <p>
+                    Buna örnek olarak;    
+                     <xmp  style="color:green">
+                        <form>
+                            <select class="form-select" disabled>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                           </form>    
+                    </xmp>
+                 </p>   
+                 <form>
+                    <select class="form-select" disabled>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                   </form>    
+                    <h2>Data Lists</h2>   
+                    <p>Bootstrap ayrıca, bir < input > öğesi için önceden tanımlanmış seçeneklerin bir listesi olan veri listelerini de biçimlendirir.</p>
+                    <p>
+                          
+                         <xmp  style="color:green">
+                            <form action="/action_page.php">
+                                <label for="browser" class="form-label">Listeden tarayıcınızı seçin:</label>
+                                <input class="form-control" list="browsers" name="browser" id="browser">
+                                <datalist id="browsers">
+                                  <option value="Edge">
+                                  <option value="Firefox">
+                                  <option value="Chrome">
+                                  <option value="Opera">
+                                  <option value="Safari">
+                                </datalist>    
+                                <button type="submit" class="btn btn-primary mt-3">Gönder</button>
+                              </form>    
+                        </xmp>
+                     </p>   
+                     <img src="pL4va.gif"> </img>
+                     <form action="/action_page.php">
+                        <label for="browser" class="form-label">Listeden tarayıcınızı seçin:</label>
+                        <input class="form-control" list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                          <option value="Edge">
+                          <option value="Firefox">
+                          <option value="Chrome">
+                          <option value="Opera">
+                          <option value="Safari">
+                        </datalist>    
+                        <button type="submit" class="btn btn-primary mt-3">Gönder</button>
+                      </form>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
